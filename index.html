@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.css">
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.min.js"></script>
+    <title>2018 서울문화로 바캉스</title>
+</head>
+
+<body>
+    <div id="_wrap">
+        <div id="fullpage">
+            <header id="_header" class="section fp-auto-height">
+                <nav class="_nav">
+                    <ul class="_gnd _clearfix">
+                        <li class="_gnb_lst _lst1"><a href="" class="_btn _link"><span class="_txt">2018 서울문화로 바캉스</span></a></li>
+                        <li class="_gnb_lst _lst2"><a href="" class="_btn _link"><span class="_txt">광장바캉스</span></a></li>
+                        <li class="_gnb_lst _lst3"><a href="" class="_btn _link"><span class="_txt">아트바캉스</span></a></li>
+                        <li class="_gnb_lst _lst4"><a href="" class="_btn _link"><span class="_txt">커뮤니티</span></a></li>
+                        <li class="_gnb_lst _lst5"><a href="" class="_btn _link"><span class="_txt">SOS Festival 2018</span></a></li>
+                    </ul>
+                </nav>
+                <div class="_spot_wrap">
+                    <h1 class="_main_logo">
+                        <img src="imgs/main_logo.png" alt="서울 문화로 바캉스 서울, 문화로 피서를 즐기다! 2018.08.10(금)~11(토), 17:00 ~ 24:00 서울광장, 청계광장, 광화문광장 등" class="_rel">
+                    </h1>
+                </div>
+            </header>
+            <!--            <section id="_section">-->
+            <!--                <div class="_container _main">-->
+            <section id="_content_wrap" class="section _seoul1">
+                <h2 class="_sub_logo">
+                    <p class="_tit">광장바캉스</p>
+                    <p class="_sub_txt">서울 도심의 중심! 서울광장, 청계광장, 광화문광장에서<br>펼쳐지는 다양한 문화체험 도시 바캉스</p>
+                </h2>
+                <div class="_content_top _clearfix">
+                    <figure class="_img_box">
+                        <img src="imgs/content_top1.png" alt="서울광장바캉스이미지">
+                    </figure>
+                    <div class="_dec_box">
+                        <p class="_txt">서울광장에서 재미와 즐거움을 만끽해볼까요?</p>
+                        <p class="_foc_txt">서울광장바캉스</p>
+                        <p class="_date_txt">8월 10일, 11일 | 서울광장</p>
+                        <p class="_txt">PROGRAM</p>
+                        <p class="_txt">서울씨네뮤직&nbsp;&nbsp;|&nbsp;&nbsp;모기장 영화제&nbsp;&nbsp;|&nbsp;&nbsp;디지펀 아트<br>축제속의축제&nbsp;&nbsp;|&nbsp;&nbsp;힐링쉼터</p>
+                        <a href="" class="_btn _link">자세히 알아보기</a>
+                    </div>
+                </div>
+                <div class="_content_bott _clearfix">
+                    <div class="_item _itme1">
+                        <figure class="_img_box"><img src="imgs/content_item1.png" alt="서울씨네뮤직 이미지"></figure>
+                    </div>
+                    <div class="_item _item2">
+                        <figure class="_img_box"><img src="imgs/content_item2.png" alt="모기장 영화제 이미지"></figure>
+                    </div>
+                    <div class="_item _item3">
+                        <figure class="_img_box"><img src="imgs/content_item3.png" alt="디지펀 아트 이미지"></figure>
+                    </div>
+                </div>
+            </section>
+            <section id="_content_wrap" class="section _seoul2"></section>
+            <section id="_content_wrap" class="section _art"></section>
+            <section id="_content_wrap" class="section _bot"></section>
+        </div>
+        <!--            </section>-->
+        <!--        </div>-->
+    </div>
+    <script>
+        jQuery(function($) {
+            $('#fullpage').fullpage({
+                licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                verticalCentered: true,
+                scrollBar: true,
+                afterLoad: function(anchorLink,index) {
+                    //using index
+                    console.log(index);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
