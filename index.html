@@ -63,7 +63,7 @@
             </section>
             <section class="section _content_wrap _seoul2">
                 <h2 class="_hide_txt">청계 / 광화문 바캉스</h2>
-                <div class="_content_top _clearfix">
+                <div class="_content_top _content_top_1st _clearfix">
                     <figure class="_img_box">
                         <img src="imgs/content_top2.png" alt="청계광장바캉스이미지" class="_rel">
                     </figure>
@@ -76,7 +76,7 @@
                         <a href="" class="_btn _link">자세히 알아보기</a>
                     </div>
                 </div>
-                <div class="_content_top _content_top_sec _clearfix">
+                <div class="_content_top _content_top_2ed _clearfix">
                     <figure class="_img_box">
                         <img src="imgs/content_top3.png" alt="광화문광장바캉스이미지" class="_rel">
                     </figure>
@@ -169,58 +169,58 @@
                     var $topImg3 = $contentTop3.find('._img_box');
                     var $item = $seoul1.find('._item');
                     if (destination.index == 0) {
-//                        $item.css({
-//                            top: 10,
-//                            opacity: 0
-//                        });
-//                        $topImg.css({
-//                            right: 10,
-//                            opacity: 0
-//                        });
+                        $item.css({
+                            top: 10,
+                            opacity: 0
+                        });
+                        $topImg.css({
+                            right: 10,
+                            opacity: 0
+                        });
                     } else if (destination.index == 1) {
-//                        $item.animate({
-//                            top: 0,
-//                            opacity: 1
-//                        }, 200);
-//                        $topImg.animate({
-//                            right: 0,
-//                            opacity: 1
-//                        }, 200);
-//                        $topImg2.css({
-//                            right: 10,
-//                            opacity: 0
-//                        });
+                        $item.animate({
+                            top: 0,
+                            opacity: 1
+                        }, 200);
+                        $topImg.animate({
+                            right: 0,
+                            opacity: 1
+                        }, 200);
+                        $topImg2.css({
+                            right: 10,
+                            opacity: 0
+                        });
                     } else if (destination.index == 2) {
-//                        $item.css({
-//                            top: 10,
-//                            opacity: 0
-//                        });
-//                        $topImg.css({
-//                            right: 10,
-//                            opacity: 0
-//                        });
-//                        $topImg3.css({
-//                            left: 10,
-//                            opacity: 0
-//                        });
-//                        $topImg2.animate({
-//                            right: 0,
-//                            opacity: 1
-//                        }, 200);
+                        $item.css({
+                            top: 10,
+                            opacity: 0
+                        });
+                        $topImg.css({
+                            right: 10,
+                            opacity: 0
+                        });
+                        $topImg3.css({
+                            left: 10,
+                            opacity: 0
+                        });
+                        $topImg2.animate({
+                            right: 0,
+                            opacity: 1
+                        }, 200);
                     } else if (destination.index == 3) {
-//                        $topImg2.css({
-//                            right: 10,
-//                            opacity: 0
-//                        });
-//                        $topImg3.animate({
-//                            left: 0,
-//                            opacity: 1
-//                        }, 200);
+                        $topImg2.css({
+                            right: 10,
+                            opacity: 0
+                        });
+                        $topImg3.animate({
+                            left: 0,
+                            opacity: 1
+                        }, 200);
                     } else if (destination.index == 4) {
-//                        $topImg3.css({
-//                            left: 10,
-//                            opacity: 0
-//                        });
+                        $topImg3.css({
+                            left: 10,
+                            opacity: 0
+                        });
                     }
                 }
             });
