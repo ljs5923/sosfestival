@@ -15,7 +15,7 @@
 <body>
     <div id="_wrap">
         <div id="fullpage">
-            <header id="_header" class="section fp-auto-height">
+            <header id="_header" class="section">
                 <nav class="_nav">
                     <ul class="_gnd _clearfix">
                         <li class="_gnb_lst _lst1"><a href="" class="_btn _link"><span class="_txt">2018 서울문화로 바캉스</span></a></li>
@@ -160,11 +160,18 @@
     </div>
     <script>
         jQuery(function($) {
+            $(window).on('load resize',function(){
+                var winW=$(window).width();
+                if(winW>575){
+                    $('#_header').addClass('fp-auto-height');
+                } else{
+                    $('#_header').removeClass('fp-auto-height');
+                }
+            })
             $('#fullpage').fullpage({
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 scrollBar: true,
-//                responsiveHeight: 769,
-//                verticalCentered: false,
+                responsiveHeight: 567,
                 afterLoad: function(origin, destination, direction) {
                     var $seoul1 = $('._seoul1');
                     var $seoul2 = $('._seoul2');
@@ -207,7 +214,7 @@
                             left: -50,
                             opacity: 0
                         });
-                        $topImg3.css('opacity',0);
+                        $topImg3.css('opacity', 0);
                         $topImg2.animate({
                             left: 0,
                             opacity: 1
@@ -221,7 +228,7 @@
                             opacity: 1
                         }, 500);
                     } else if (destination.index == 4) {
-                        $topImg3.css('opacity',0);
+                        $topImg3.css('opacity', 0);
                     }
                 }
             });
