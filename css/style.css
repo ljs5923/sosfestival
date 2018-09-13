@@ -26,8 +26,22 @@ img{display:block;border:0}
 #_header ._nav ._gnb_lst ._link:hover ._txt{color: #195367}
 #_header ._nav ._gnb_lst ._link ._txt:before{content: '';position: absolute;bottom: 0;left: 10%;width: 0;height: 3px;background-color: #195367;opacity: 0;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition: all 0.3s ease}
 #_header ._nav ._gnb_lst ._link:hover ._txt:before{content: '';position: absolute;bottom: 0;left: 10%;width: 80%;height: 3px;background-color: #195367;opacity: 1}
+#_header ._mobile_menu_wrap{position: fixed;top: 0;right: 0;width: 60%;height: 100%;margin-right: -60%;background-color: #195367;z-index: 2}
+#_header ._mobile_menu_wrap ._gnb{position: absolute;top: 50%;left: 50%;width: 100%;padding: 20px 0 10px;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+#_header ._mobile_menu_wrap ._gnb:after{content: '';position: absolute;top: 0;left: 10%;width: 80%;height: 2px;background-color: #fff}
+#_header ._mobile_menu_wrap ._gnb:before{content: '';position: absolute;bottom: 0;left: 10%;width: 80%;height: 2px;background-color: #fff}
+#_header ._mobile_menu_wrap ._gnb ._gnb_lst{width: 90%;padding-left: 10%;margin-bottom: 20px}
+#_header ._mobile_menu_wrap ._gnb ._gnb_lst ._txt{font-size: 16px;font-weight: bold;color: #57d3ed}
+#_header ._mobile_menu_wrap ._gnb ._sub_gnb{margin-top: 10px}
+#_header ._mobile_menu_wrap ._gnb ._sub_gnb ._txt{font-size: 14px;color: #fff}
+#_header ._menu_btn_wrap{display: none;position: fixed;top: 10px;right: 10px;width: 49px;height: 49px;z-index: 3}
+#_header ._menu_btn_wrap ._menu_btn{display: block}
+#_header ._menu_btn_wrap ._menu_btn._close_btn{display: none}
+#_header ._menu_btn_wrap ._menu_btn ._icon{display: inline-block;width: 49px;height: 49px;text-indent: -9999px;-webkit-background-size: 49ox 49ox;background-size: 49px 49px}
+#_header ._menu_btn_wrap ._menu_btn ._icon._open_icon{background-image: url(../imgs/mobile_menu.png)}
+#_header ._menu_btn_wrap ._menu_btn ._icon._close_icon{background-image: url(../imgs/mobile_close.png)}
 #_header ._spot_wrap{position: relative;width: 100%;height: 636px;background-image: url(../imgs/spot_bg.png);-webkit-background-size: cover;background-size: cover}
-#_header ._spot_wrap ._main_logo{position: absolute;width: 590px;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%)}
+#_header ._spot_wrap ._main_logo{position: absolute;width: 590px;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-50%,-50%)}
 /* section */
 ._content_container {width: 100%;max-width: 1200px;margin: auto}
 ._content_container ._sub_logo{width: 599px;margin: 0 auto;padding: 20px 0;text-align: center;background-color: #44d0f1;border: 5px solid #195367;border-radius: 10px}
@@ -125,8 +139,8 @@ img{display:block;border:0}
 }
 /* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) */
 @media only screen and (max-width: 991px) {
-    #_header ._nav{display: none}
     #_header ._spot_wrap ._main_logo{width: 450px}
+    #_header ._nav ._gnb_lst ._txt{font-size: 15px}
     ._content_container ._sub_logo{width: 399px}
     ._content_container ._content_bott{display: none}
     ._content_container ._content_top ._dec_box{width: 100%;padding-top: 287px;padding-left: 0;text-align: center}
@@ -144,8 +158,9 @@ img{display:block;border:0}
     #_footer ._foot_wrap ._foot_mid ._lst4 a:after{content: '';opacity: 1}
 }
 /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
-@media only screen and (max-width: 812px) {
-    #_header ._spot_wrap{height: 360px;-webkit-background-size: 100%;background-size: 100%;background-position: 0 168px;background-repeat: no-repeat}
+@media only screen and (max-width: 767px){
+    #_header ._nav{display: none}
+    #_header ._menu_btn_wrap{display: block}
     #_header ._spot_wrap ._main_logo{width: 390px}
     ._content_container ._sub_logo{width: 299px;padding: 10px 0;margin-top: 50px}
     ._content_container ._sub_logo ._tit{font-size: 24px}
@@ -167,8 +182,8 @@ img{display:block;border:0}
     #_footer ._foot_wrap ._foot_bot ._name_tel_txt{font-size: 18px}
 }
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
-@media only screen and (max-width: 575px) {
-    #_header ._spot_wrap{height: 100%;background-image: url(../imgs/mo_spot_bg.png);-webkit-background-size: 100%;background-size: 100%;background-position:0}
+@media only screen and (max-width: 567px) {
+    #_header ._spot_wrap{height: 100%;background-image: url(../imgs/mo_spot_bg.png);-webkit-background-size: 100%;background-size: 100%;background-position:0;background-repeat: no-repeat}
     #_header ._spot_wrap ._main_logo{width: 250px}
     ._content_container ._sub_logo{width: 195px;margin-top: 0}
     ._content_container ._sub_logo ._tit{font-size: 16px}
