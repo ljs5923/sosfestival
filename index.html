@@ -140,17 +140,17 @@
                             <ul class="_mid_lsts  _clearfix">
                                 <li class="_lst _lst1"><span class="_txt">특별협력</span></li>
                                 <li class="_lst _lst2"><a href="http://www.much.go.kr/" target="_blank" title="대한민국역사박물관 사이트 이동하기"><img src="imgs/f_logo5.png" alt="대한민국역사박물관 사이트 이미지" class="_rel"></a></li>
-                                <li class="_lst _lst3"><a href="https://www.goethe.de" target="_blank" title="괴테-인스티투트 사이트 이동하기"><img src="imgs/f_logo6.png" alt="괴테-인스티투트 사이트 이미지" class="_rel"></a></li>
-                                <li class="_lst _lst4"><a href="http://www.crown.co.kr/main/" target="_blank" title="크라운 해태 사이트 이동하기"><img src="imgs/f_logo7.png" alt="크라운 해태 사이트 이미지" class="_rel"></a></li>
-                                <li class="_lst _lst5"><a href="http://saaf.co.kr/" target="_blank" title="SAAF 사이트 이동하기"><img src="imgs/f_logo8.png" alt="SAAF 사이트 이미지" class="_rel"></a></li>
-                                <li class="_lst _lst6"><a href="http://www.digifunart.com/2018" target="_blank" title="디지펀 사이트 이동하기"><img src="imgs/f_logo9.png" alt="디지펀 사이트 이미지" class="_rel"></a></li>
+                                <li class="_lst _lst3"><a href="https://www.goethe.de" target="_blank" title="괴테-인스티투트 사이트 이동하기"><img src="imgs/f_logo9.png" alt="괴테-인스티투트 사이트 이미지" class="_rel"></a></li>
+                                <li class="_lst _lst4"><a href="http://www.crown.co.kr/main/" target="_blank" title="크라운 해태 사이트 이동하기"><img src="imgs/f_logo6.png" alt="크라운 해태 사이트 이미지" class="_rel"></a></li>
+                                <li class="_lst _lst5"><a href="http://saaf.co.kr/" target="_blank" title="SAAF 사이트 이동하기"><img src="imgs/f_logo7.png" alt="SAAF 사이트 이미지" class="_rel"></a></li>
+                                <li class="_lst _lst6"><a href="http://www.digifunart.com/2018" target="_blank" title="디지펀 사이트 이동하기"><img src="imgs/f_logo8.png" alt="디지펀 사이트 이미지" class="_rel"></a></li>
                             </ul>
                         </div>
                         <div class="_foot_con _foot_bot">
                             <p class="_name_tel_txt">2018 서울문화로 바캉스 사무국 l 02. 550. 2535</p>
                             <div class="_sns_btn _clearfix">
-                                <a href="https://www.facebook.com/seoulopennight/videos/1477844955615296/" target="_blank" title="페이스북 이동하기"><img src="imgs/ico_fb.png" alt="페이스북 이미지"></a>
-                                <a href="https://www.instagram.com/s_culturenight/" target="_blank" title="인스타그램 이동하기"><img src="imgs/ico_insta.png" alt="인스타그램 이미지"></a>
+                                <a href="https://www.facebook.com/seoulopennight/videos/1477844955615296/" target="_blank" title="페이스북 이동하기"><img src="imgs/ico_fb.png" alt="페이스북 이미지" class="_rel"></a>
+                                <a href="https://www.instagram.com/s_culturenight/" target="_blank" title="인스타그램 이동하기"><img src="imgs/ico_insta.png" alt="인스타그램 이미지" class="_rel"></a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +214,10 @@
                             left: -50,
                             opacity: 0
                         });
-                        $topImg3.css('opacity', 0);
+                        $topImg3.css({
+                            left:-50,
+                            opacity:0
+                        });
                         $topImg2.animate({
                             left: 0,
                             opacity: 1
@@ -225,10 +228,14 @@
                             opacity: 0
                         });
                         $topImg3.animate({
+                            left:0,
                             opacity: 1
                         }, 500);
                     } else if (destination.index == 4) {
-                        $topImg3.css('opacity', 0);
+                        $topImg3.css({
+                            left:-50,
+                            opacity:0
+                        });
                     }
                 }
             });
