@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile_style.css">
     <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="../font/nanumsquare.css">
     <script src="../js/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -78,61 +80,106 @@
                 <h2 class="_sub_tit">프로그램(PROGRAM)</h2>
                 <div class="_content_items">
                     <div class="_content_item _content_item01">
-                        <figure class="_img_box"><img src="../imgs/cultule/culture_1.png" alt="서울씨네뮤직 이미지"></figure>
-                        <div class="_dec_box"><a href="">
-                                <h3 class="sub_tit">서울씨네뮤직</h3>
-                                <p class="_txt">영화 속 음악을 라이브 공연과 함께!</p>
-                                <p class="_txt">날짜</p>
-                                <p class="_txt">8월 10일(금), 11일(토)</p>
-                                <p class="_txt">장소</p>
-                                <p class="_txt">서울광장 메인무대</p>
-                            </a></div>
+                        <figure class="_img_box"><img src="../imgs/cultule/culture_1.png" alt="서울씨네뮤직 이미지" class="_rel"></figure>
+                        <div class="_dec_box">
+                            <div class="_view_box1">
+                                <a href="#_modal1" class="_view1">
+                                    <h3 class="_tit">서울씨네뮤직</h3>
+                                    <p class="_txt">영화 속 음악을 라이브 공연과 함께!</p>
+                                    <ul class="_clearfix">
+                                        <li><span class="_txt">날짜</span></li>
+                                        <li><span class="_txt">8월 10일(금), 11일(토)</span></li>
+                                        <li><span class="_txt">장소</span></li>
+                                        <li><span class="_txt">서울광장 메인무대</span></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="_view_box2">
+                                <a href="#_modal1" class="_view2">View more</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="_content_item _content_item02">
-                        <figure class="_img_box"><img src="../imgs/cultule/culture_2.png" alt="모기장 영화제 이미지"></figure>
-                        <div class="_dec_box"><a href="">
-                                <h3 class="sub_tit">모기장 영화제</h3>
-                                <p class="_txt">가족과 함께, 밤바람과 함께,<br>하지만 모기는 없게!</p>
-                                <p class="_txt">날짜</p>
-                                <p class="_txt">8월 10일(금), 11일(토)</p>
-                                <p class="_txt">장소</p>
-                                <p class="_txt">서울광장</p>
-                            </a></div>
+                        <figure class="_img_box"><img src="../imgs/cultule/culture_2.png" alt="모기장 영화제 이미지" class="_rel"></figure>
+                        <div class="_dec_box">
+                            <div class="_view_box1">
+                                <a href="#_modal2" class="_view1">
+                                    <h3 class="_tit">모기장 영화제</h3>
+                                    <p class="_txt">가족과 함께, 밤바람과 함께,<br>하지만 모기는 없게!</p>
+                                    <ul class="_clearfix">
+                                        <li><span class="_txt">날짜</span></li>
+                                        <li><span class="_txt">8월 10일(금), 11일(토)</span></li>
+                                        <li><span class="_txt">장소</span></li>
+                                        <li><span class="_txt">서울광장</span></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="_view_box2">
+                                <a href="#_modal2" class="_view2">View more</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="_content_item _content_item03">
-                        <figure class="_img_box"><img src="../imgs/cultule/culture_3.png" alt="디지펀 아트 이미지"></figure>
-                        <div class="_dec_box"><a href="">
-                                <h3 class="sub_tit">디지펀 아트</h3>
-                                <p class="_txt">Digital + Fun + Art, 디지털 기기로 창작된 예술의 향연!</p>
-                                <p class="_txt">날짜</p>
-                                <p class="_txt">8월 10일(금), 11일(토)</p>
-                                <p class="_txt">장소</p>
-                                <p class="_txt">서울광장</p>
-                                <p class="_txt">주관</p>
-                                <span class="_brand_img"><img src="../imgs/cultule/digifun.png" alt="디지펀아트이미지"></span>
-                            </a></div>
+                        <figure class="_img_box"><img src="../imgs/cultule/culture_3.png" alt="디지펀 아트 이미지" class="_rel"></figure>
+                        <div class="_dec_box">
+                            <div class="_view_box1">
+                                <a href="#_modal3" class="_view1">
+                                    <h3 class="_tit">디지펀 아트</h3>
+                                    <p class="_txt">Digital + Fun + Art, 디지털 기기로 창작된 예술의 향연!</p>
+                                    <ul class="_clearfix">
+                                        <li><span class="_txt">날짜</span></li>
+                                        <li><span class="_txt">8월 10일(금), 11일(토)</span></li>
+                                        <li><span class="_txt">장소</span></li>
+                                        <li><span class="_txt">서울광장</span></li>
+                                        <li><span class="_txt">주관</span></li>
+                                        <li><span class="_brand_img"><img src="../imgs/cultule/digifun.png" alt="디지펀아트이미지"></span></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="_view_box2">
+                                <a href="#_modal3" class="_view2">View more</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="_content_item _content_item04">
-                        <figure class="_img_box"><img src="../imgs/cultule/culture_4.png" alt="축제속의 축제 이미지"></figure>
-                        <div class="_dec_box"><a href="">
-                                <h3 class="sub_tit">축제속의 축제</h3>
-                                <p class="_txt">축제 속에서 즐기는 시민 주도형 문화 활동!</p>
-                                <p class="_txt">날짜</p>
-                                <p class="_txt">8월 10일(금), 11일(토)</p>
-                                <p class="_txt">장소</p>
-                                <p class="_txt">서울광장</p>
-                            </a></div>
+                        <figure class="_img_box"><img src="../imgs/cultule/culture_4.png" alt="축제속의 축제 이미지" class="_rel"></figure>
+                        <div class="_dec_box">
+                            <div class="_view_box1">
+                                <a href="#_modal4" class="_view1">
+                                    <h3 class="_tit">축제속의 축제</h3>
+                                    <p class="_txt">축제 속에서 즐기는 시민 주도형 문화 활동!</p>
+                                    <ul class="_clearfix">
+                                        <li><span class="_txt">날짜</span></li>
+                                        <li><span class="_txt">8월 10일(금), 11일(토)</span></li>
+                                        <li><span class="_txt">장소</span></li>
+                                        <li><span class="_txt">서울광장</span></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="_view_box2">
+                                <a href="#_modal4" class="_view2">View more</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="_content_item _content_item05">
-                        <figure class="_img_box"><img src="../imgs/cultule/culture_5.png" alt="힐링쉼터 이미지"></figure>
-                        <div class="_dec_box"><a href="">
-                                <h3 class="sub_tit">힐링쉼터</h3>
-                                <p class="_txt">다양한 축제 프로그램과 어우러진 ‘휴양지’ 컨셉의 쉼터!</p>
-                                <p class="_txt">날짜</p>
-                                <p class="_txt">8월 10일(금), 11일(토)</p>
-                                <p class="_txt">장소</p>
-                                <p class="_txt">서울광장</p>
-                            </a></div>
+                        <figure class="_img_box"><img src="../imgs/cultule/culture_5.png" alt="힐링쉼터 이미지" class="_rel"></figure>
+                        <div class="_dec_box">
+                            <div class="_view_box1">
+                                <a href="#_modal5" class="_view1">
+                                    <h3 class="_tit">힐링쉼터</h3>
+                                    <p class="_txt">다양한 축제 프로그램과 어우러진 ‘휴양지’ 컨셉의 쉼터!</p>
+                                    <ul class="_clearfix">
+                                        <li><span class="_txt">날짜</span></li>
+                                        <li><span class="_txt">8월 10일(금), 11일(토)</span></li>
+                                        <li><span class="_txt">장소</span></li>
+                                        <li><span class="_txt">서울광장</span></li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="_view_box2">
+                                <a href="#_modal5" class="_view2">View more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -167,3 +214,124 @@
             </div>
         </footer>
     </div>
+    <div id="_modal1" class="_modal_container">
+        <div class="_head_line"></div>
+        <div class="_modal_wrap">
+            <div class="_modal_item _item1">
+                <div class="_item_top">
+                    <p class="_tit">서울씨네뮤직</p>
+                    <p class="_txt">영화 속 음악을 라이브 공연과 함께!</p>
+                </div>
+                <figure class="_img_box">
+                    <img src="../imgs/cultule/culture_1.png" alt="서울씨네뮤직이미지" class="_rel">
+                </figure>
+                <div class="_table">
+                    <ul class="_head _clearfix">
+                        <li></li>
+                        <li>장 르</li>
+                        <li>청년예술가 꿈☆의 무대</li>
+                        <li>썸머 나이트 라이브</li>
+                    </ul>
+                    <ul class="_data _clearfix">
+                        <li>8월 10일(금)</li>
+                        <li>인디밴드</li>
+                        <li>19:30 - 20:30</li>
+                        <li>20:50 - 21:50</li>
+                    </ul>
+                    <ul class="_data _clearfix">
+                        <li>8월 11일(토)</li>
+                        <li>클 래 식</li>
+                        <li>19:30 - 20:00</li>
+                        <li>20:20 - 21:20</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_modal_item _item2">
+                <div class="_item_top">
+                    <p class="_tit">주요내용</p>
+                </div>
+                <div class="_item_con">
+                    <p class="_data">8. 10(금)</p>
+                    <div class="_con">
+                        <p class="_txt">청년예술가 꿈☆의 무대</p>
+                        <ul class="_img_lsts _clearfix">
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_antiqe.png" alt="오래된달">
+                                <p class="_txt">오래된달</p>
+                            </li>
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_changcul.jpg" alt="창출">
+                                <p class="_txt">창출</p>
+                            </li>
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_byunhwa.jpg" alt="변화무쌍">
+                                <p class="_txt">변화무쌍</p>
+                            </li>
+                        </ul>
+                        <p class="_txt">썸머 나이트 라이브</p>
+                        <ul class="_img_lsts _clearfix">
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_crying.jpg" alt="오래된달">
+                                <p class="_txt">크라잉넛</p>
+                            </li>
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_chomungeun.jpg" alt="창출">
+                                <p class="_txt">조문근밴드</p>
+                            </li>
+                            <li class="_img_lst">
+                                <img src="../imgs/cultule/pop1_marsh.png" alt="변화무쌍">
+                                <p class="_txt">마르멜로</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="_modal_item _item3">
+                <div class="_item_top">
+                    <p class="_tit">주요내용</p>
+                </div>
+                <div class="_item_con">
+                    <p class="_data">8. 11(토)</p>
+                    <div class="_con">
+                        <p class="_txt">청년예술가 꿈☆의 무대</p>
+                        <ul class="_img_lsts _clearfix">
+                            <li class="_img_lst _item3-1">
+                                <img src="../imgs/cultule/pop1_leemunsuk.jpg" alt="이문석재즈쿼텟이미지">
+                                <p class="_txt">이문석재즈쿼텟</p>
+                            </li>
+                            <li class="_img_lst _item3-1">
+                                <img src="../imgs/cultule/pop1_440_1.png" alt="바이올린플레이어440이미지">
+                                <p class="_txt">바이올린플레이어440</p>
+                            </li>
+                        </ul>
+                        <p class="_txt">썸머 나이트 라이브</p>
+                        <ul class="_img_lsts _clearfix">
+                            <li class="_img_lst _item3-2">
+                                <img src="../imgs/cultule/pop1_9.jpg" alt="서울시민연합오케스트라(지휘:이경구)이미지">
+                                <p class="_txt">서울시민연합오케스트라(지휘:이경구)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_modal_footer">
+            <p class="_tit">2018 서울문화로 바캉스 사무국</p>
+            <p class="_txt">02. 550. 2535</p>
+            <div class="_sns_btn_wrap _clearfix">
+                <a href="https://www.facebook.com/seoulopennight/videos/1477844955615296/" class="_btn _fb_btn"><img src="../imgs/facebook.png" alt="페이스북아이콘 이미지"></a>
+                <a href="https://www.instagram.com/s_culturenight/" class="_btn _insta_btn"><img src="../imgs/insta.png" alt="인스타그램아이콘 이미지"></a>
+            </div>
+        </div>
+    </div>
+    <div id="_modal2" class="_modal_container"></div>
+    <div id="_modal3" class="_modal_container"></div>
+    <div id="_modal4" class="_modal_container"></div>
+    <div id="_modal5" class="_modal_container"></div>
+    <script>
+        jQuery(function($) {
+            $('._view2').fancybox();
+        })
+    </script>
+</body>
+</html>
