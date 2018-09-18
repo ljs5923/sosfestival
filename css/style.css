@@ -5,6 +5,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 a{text-decoration:none;color:#555;cursor:pointer}
 html,body{width:100%;height:100%;letter-spacing:-1px;font-family:'Nanum Square'}
 body{line-height:1.5}
+tbody{vertical-align: middle}
 ol,ul{list-style:none}
 input,button,label{margin:0;padding:0;border:none;background:none;cursor:pointer}
 img{display:block;border:0}
@@ -122,8 +123,8 @@ img{display:block;border:0}
 ._content_container._cul h1._tit{height: 60px;line-height: 60px;text-align: center;font-size: 56px;font-weight: bold;padding-top: 100px}
 ._content_container._cul ._tit_content{width: 80%;max-width: 500px;margin: 0 auto;padding: 50px 0 150px}
 ._content_container._cul ._tit_content ._tit_dec{padding-top: 40px;text-align: center}
-._content_container._cul ._tit_content ._tit_dec ._txt._foc{font-size: 42px;font-weight: bold;color: #000}
 ._content_container._cul ._tit_content ._tit_dec ._txt{font-size: 20px;color: #555}
+._content_container._cul ._tit_content ._tit_dec ._txt._foc{font-size: 42px;font-weight: bold;color: #000}
 ._content_container._cul ._content ._sub_tit{display: inline-block;position: relative;margin: 0 0 50px 20px;padding-bottom: 5px;font-size: 28px;font-weight: bold}
 ._content_container._cul ._content ._sub_tit:after{content: '';position: absolute;bottom: 0;left: 0;width: 50%;height: 5px;background-color: #44d1ec}
 ._content_container._cul ._content ._content_item{position: relative;width: 800px;margin: 0 auto;padding-bottom: 100px}
@@ -147,9 +148,13 @@ img{display:block;border:0}
 ._modal_container ._modal_wrap ._item_top ._tit{font-size: 24px;font-weight: bold;color: #44d1ec}
 ._modal_container ._modal_wrap ._item_top ._txt{font-size: 14px}
 ._modal_container ._modal_wrap ._img_box{margin-bottom: 10px}
-._modal_container ._modal_wrap ._table li{float: left;width: 22%;height: 40px;line-height: 40px;text-align: center;font-size: 14px}
-._modal_container ._modal_wrap ._table li:nth-child(3){width: 34%}
-._modal_container ._modal_wrap ._table ._head li{background-color: #44d1ec;font-size: 16px;font-weight: bold;color: #fff;border-right: 2px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+._modal_container ._modal_wrap ._table li{float: left;width: 22%;height: 40px;line-height: 40px;text-align: center;font-size: 14px;border-right: 2px solid #fff;background-color: #efefef}
+#_modal2._modal_container ._modal_wrap ._table ._lst{width: 25%}
+._modal_container ._modal_wrap ._table ._lst._lst3{width: 34%}
+._modal_container ._modal_wrap ._table ._lst._lst4{border-right: none}
+._modal_container ._modal_wrap ._table ._head ._lst{background-color: #44d1ec;font-size: 16px;font-weight: bold;color: #fff;border-right: 2px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+._modal_container ._modal_wrap ._table ._head ._lst._lst4{border-right: none}
+._modal_container ._modal_wrap ._table ul:nth-child(2){border-bottom: 2px solid #fff}
 ._modal_container ._modal_wrap ._modal_item._item2 ._item_top ._tit{font-size: 24px;font-weight: bold;color: #000}
 ._modal_container ._modal_wrap ._item_con ._data{padding-left: 10px;font-size: 18px;font-weight: bold;line-height: 40px;background-color: #44d1ec;color: #fff}
 ._modal_container ._modal_wrap ._item_con ._con{padding: 25px;border: 1px solid #ccc;border-top: none}
@@ -160,6 +165,12 @@ img{display:block;border:0}
 ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst ._txt{position: absolute;bottom: 0;width: 100%;margin-bottom: 0;text-align: center;font-size: 14px;color: #fff;background-color: rgba(0,0,0,0.7)}
 ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-1{max-width: 260px}
 ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-2{max-width: 540px}
+._modal_container ._modal_wrap ._item_con ._dec_box ._table_tit{font-weight: bold;color: #555}
+._modal_container ._modal_wrap ._item_con ._dec_box ._dec{width: 100%}
+._modal_container ._modal_wrap ._item_con ._dec_box ._dec th{vertical-align: middle;font-weight: bold;color: #555;font-size: 17px}
+._modal_container ._modal_wrap ._item_con ._dec_box ._dec td{vertical-align: middle;color: #555;padding-left: 10px}
+._modal_container ._modal_wrap ._item_con ._dec_box ._dec td._dec_txt{font-size: 13px}
+._modal_container ._modal_wrap ._item_con ._dec_box ._dec td._dec_txt b{font-weight: bold;color: #44d1ec}
 ._modal_container ._modal_footer{position: relative;padding: 30px;background-color: #185367}
 ._modal_container ._modal_footer ._tit{font-size: 13px;font-weight: bold;color: #fff}
 ._modal_container ._modal_footer ._txt{font-size: 29px;font-weight: bold;color: #fff}
