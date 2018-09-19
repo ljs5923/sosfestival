@@ -157,9 +157,30 @@
     ._content_container._cul ._content ._sub_tit{font-size: 18px}
     ._content_container._cul ._content ._content_item{width: 100%}
     ._content_container._cul ._content ._content_item ._dec_box{position: relative;top: 0;width: 100%;height: auto;padding: 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+    ._content_container._cul._cul2 ._content ._content_item ._dec_box{width: 100%;height: auto}
     ._content_container._cul ._content ._content_item ._view_box1 ._view1{display: block;width: 100%;height: 100%}
     ._content_container._cul ._content ._content_item ul{position: relative;bottom: 0;padding-top: 30px}
     ._content_container._cul ._content ._content_item ._dec_box ._tit{font-size: 18px}
     ._content_container._cul ._content ._content_item ._dec_box ._txt{font-size: 13px}
     ._content_container._cul ._content ._content_item ._view_box2{display: none}
+    ._modal_container ._modal_wrap ._main_table thead{font-size: 11px}
+    ._modal_container ._modal_wrap ._item_top ._tit{font-size: 18px}
+    ._modal_container ._modal_wrap ._item_top ._txt{font-size: 11px}
+    ._modal_container ._modal_wrap ._item2 ._item_top ._tit{font-size: 16px}
+    ._modal_container ._modal_wrap ._item_con ._data{font-size: 14px}
+    ._modal_container ._modal_wrap ._item_con ._con ._txt{font-size: 12px}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst{float: none;margin: 0 auto}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst ._txt{font-size: 12px}
+    ._modal_container ._modal_wrap ._item_con ._dec_box ._table_tit{font-size: 11px}
+    ._modal_container ._modal_wrap ._item_con ._dec_box ._dec tbody{font-size: 11px}
+    ._modal_container ._modal_wrap ._item_con ._dec_box ._dec tbody th{width: 10%;font-size: 11px}
+    #_modal3._modal_container ._modal_wrap ._item_con ._con._2ed{padding-top: 0}
+    #_modal3._modal_container ._modal_wrap ._item_con ._con ._con_lst ._tit{font-size: 13px}
+    #_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst{float: none;width: 100%}
+    #_modal4._modal_container ._modal_wrap ._main_table thead td{padding: 2px}
+    #_modal4._modal_container ._modal_wrap ._item_con ._con ._con_lst._con_lst11, #_modal4._modal_container ._modal_wrap ._item_con ._con ._con_lst._con_lst13{margin-right: 0;margin-bottom: 30px}
+    #_down_btn{font-size: 13px}
+    ._modal_container ._modal_footer ._tit{font-size: 11px}
+    ._modal_container ._modal_footer ._txt{font-size: 18px}
+    
 }
