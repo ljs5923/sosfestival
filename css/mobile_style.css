@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
 @media only screen and (max-width:1199px){
+/* main */
     ._content_container ._sub_logo ._tit{font-size:30px}
     ._content_container ._sub_logo ._sub_txt{font-size:17px}
     ._content_container ._content_top ._dec_box ._txt{font-size:16px}
@@ -19,9 +20,11 @@
     #_footer ._foot_wrap ._foot_bot ._name_tel_txt{font-size:22px}
     #_footer ._foot_wrap ._foot_mid ._lst2,#_footer ._foot_wrap ._foot_mid ._lst3,#_footer ._foot_wrap ._foot_mid ._lst4{width:30%}
     #_footer ._foot_wrap ._foot_mid ._lst5,#_footer ._foot_wrap ._foot_mid ._lst6{width:50%}
-    #_footer ._foot_wrap ._foot_mid ._lst a:after{content:'';position:absolute;top:21px;right:0;width:2px;height:28px;background-color:#fff}
+    #_footer ._foot_wrap ._foot_mid ._lst a:after{content:'';position:absolute;top:35%;right:0;width:2px;height:30%;background-color:#fff}
     #_footer ._foot_wrap ._foot_mid ._lst4 a:after{content:'';opacity:0}
     #_footer ._foot_wrap ._foot_mid ._lst6 a:after{content:'';opacity:0}
+/* borad */
+    ._content_container._eng ._content ._img_box{padding-left: 10%}
 }
 @media only screen and (max-height:768px){
     ._content_container ._content_bott{display:none}
@@ -50,20 +53,53 @@
     #_footer ._foot_wrap ._foot_mid ._lst2, #_footer ._foot_wrap ._foot_mid ._lst3{width:43.5%}
     #_footer ._foot_wrap ._foot_mid ._lst3 a:after{content:'';opacity:0}
     #_footer ._foot_wrap ._foot_mid ._lst4 a:after{content:'';opacity:1}
+/* art */
+    ._content_container._cul ._content._art ._content_item ._con ._tit{font-size: 20px}
+    ._content_container._cul ._content._art ._content_item ._con{width: 80%;padding: 0 5%}
+/* board */
+    ._content_container._board ._content ._board thead td{font-size: 16px}
+    ._content_container._board ._content ._board td{width: 10%;font-size: 14px}
+    ._content_container._board ._content ._board td:nth-of-type(2){width: 80%}
+    ._content_container._board ._content ._board td:last-child{width: 10%}
 }
 /* 가로모드 모바일 디바이스 (가로 해상도가 376px 보다 작은 화면에 적용) */
 @media only screen and (max-height:375px){
     #_header ._nav{display:none}
     #_header ._menu_btn_wrap{display:block}
+    #_header ._tab_menu ._tab_lst ._txt{font-size: 16px}
+    #_header ._tab_menu ._tab_lst ._txt._foc{font-size: 20px}
     ._content_container ._sub_logo._x{margin-top:50px}
-    ._content_container._seoul2 ._content_top._x{margin-top:50px}    
+    ._content_container._seoul2 ._content_top._x{margin-top:50px}
+    ._content_container._cul ._tit_content{max-width: 500px}
+    ._content_container._cul h1._tit{font-size: 36px}
+    ._content_container._cul ._content ._sub_tit{font-size: 20px}
+    ._content_container._cul ._tit_content ._tit_dec ._txt{font-size: 16px}
+    ._content_container._cul ._tit_content ._tit_dec ._txt._foc{font-size: 24px}
     ._content_container._art ._content_top ._img_box{width:30%;padding-left:20%}
     ._content_container._art ._content_top ._dec_box{width:40%;padding-top:0;padding-left:60%;text-align:left}
+    ._content_container._cul ._content._art ._sub_dec_box ._txt{font-size: 16px}
     ._content_container._bot ._tit_img{width:50%;margin-top:50px;padding:0}
-    ._content_container._bot ._content_top ._img_box{width:70%;margin-bottom:50px}
+    ._content_container._bot ._content_top ._img_box{width:70%;margin-bottom:50px}    
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst{width: 32.6%;margin-right: 1%}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst:last-child{margin-right: 0}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-1{width: 49%;margin-right: 2%}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-1:last-child{margin-right: 0}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-2{width: 100%}
+    #_footer ._foot_wrap ._lst ._txt{font-size:14px}
+    #_footer ._foot_wrap ._foot_bot ._name_tel_txt{font-size: 16px}
+    #_footer ._foot_wrap ._foot_top ._lst2 a img{max-width:70px}
+    #_footer ._foot_wrap ._foot_top ._lst4 a img{max-width:88px}
+    #_footer ._foot_wrap ._foot_mid ._lst2 a img{max-width:95px}
+    #_footer ._foot_wrap ._foot_mid ._lst3 a img{max-width:85px}
+    #_footer ._foot_wrap ._foot_mid ._lst4 a img{max-width:76px}
+    #_footer ._foot_wrap ._foot_mid ._lst5 a img{max-width:31px}
+    #_footer ._foot_wrap ._foot_mid ._lst6 a img{max-width:72px}
+/* board */
+    ._content_container._board ._content ._board thead td{font-size: 14px}
 }
 /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
 @media only screen and (max-width:767px){
+/* main */
     #_header ._nav{display:none}
     #_header ._menu_btn_wrap{display:block}
     #_header ._spot_wrap ._main_logo{width:390px}
@@ -85,14 +121,14 @@
     ._content_container._bot ._content_top ._img_box{width:80%}
     #_footer ._foot_wrap ._lst ._txt{font-size:14px}
     #_footer ._foot_wrap ._foot_bot ._name_tel_txt{font-size:18px}
-    /*    cul    */
+/* cul */
     #_header ._tab_menu ._tab_lst ._txt{font-size: 13px}
     #_header ._tab_menu ._tab_lst ._txt._foc{font-size: 16px}
     ._content_container._cul h1._tit{height: 40px;line-height: 40px;font-size: 30px}
     ._content_container._cul ._tit_content{padding-bottom: 100px}
     ._content_container._cul ._tit_content ._tit_dec ._txt{font-size: 13px}
     ._content_container._cul ._tit_content ._tit_dec ._txt._foc{font-size: 22px}
-    ._content_container._cul ._content ._sub_tit{font-size: 18px}
+    ._content_container._cul ._content ._sub_tit{font-size: 16px}
     ._content_container._cul ._content ._content_item{width: 100%}
     ._content_container._cul ._content ._content_item ._img_box{margin: 0 auto}
     ._content_container._cul ._content ._content_item ._dec_box{position: relative;top: 0;width: 580px;height: auto;margin: 0 auto;padding: 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
@@ -101,10 +137,24 @@
     ._content_container._cul ._content ._content_item ._dec_box ._tit{font-size: 18px}
     ._content_container._cul ._content ._content_item ._dec_box ._txt{font-size: 13px}
     ._content_container._cul ._content ._content_item ._view_box2{display: none}
+/* modal */
+    ._modal_wrap ._item4 ._item_con ._con ._con_lst9{margin-right: 2%}
+    ._modal_container ._modal_wrap ._main_table tbody{font-size: 14px}
+    ._modal_container ._modal_wrap ._item_con ._dec_box ._dec tbody th{width: 10%;font-size: 14px}
+/*    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst._item3-1{max-width: 100%}*/
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst ._txt{font-size: 16px}
+    #_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst{width: 49%;margin-right: 0}
+    #_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst7,#_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst9{margin-right: 2%}
+/* art */
+    ._content_container._cul._art ._tit_content{max-width: 300px}
+    ._content_container._cul ._content._art ._content_item ._con ._tit{font-size: 15px}
+    ._content_container._cul ._content._art ._sub_dec_box ._txt{font-size: 16px}
+/* board */
+    ._content_container._board h1._tit{padding-top: 30px}
 }
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
 @media only screen and (max-width:567px){
-/*    main    */
+/* main */
     #_header ._spot_wrap{height:100%;background-image:url(../imgs/mo_spot_bg.png);-webkit-background-size:100%;background-size:100%;background-position:0;background-repeat:no-repeat}
     #_header ._spot_wrap ._main_logo{width:250px}
     ._content_container ._sub_logo{width:195px;margin-top:0}
@@ -147,10 +197,9 @@
     #_footer ._foot_wrap ._foot_bot ._sns_btn{width:49px;bottom:100px;left:0;right:0}
     #_footer ._foot_wrap ._foot_bot ._sns_btn a{float:none;width:29px;height:29px;padding:10px}
     #_footer ._foot_wrap ._foot_bot ._sns_btn a:nth-of-type(1){margin:0 0 10px 0}
-/*    cul    */
+/* cul */
     #_header ._tab_menu ._tab_lst ._txt{font-size: 12px}
     #_header ._tab_menu ._tab_lst ._txt._foc{font-size: 15px}
-    ._content_container._cul h1._tit{height: 40px;line-height: 40px;font-size: 30px}
     ._content_container._cul ._tit_content{padding-bottom: 100px}
     ._content_container._cul ._tit_content ._tit_dec ._txt{font-size: 13px}
     ._content_container._cul ._tit_content ._tit_dec ._txt._foc{font-size: 22px}
@@ -164,12 +213,13 @@
     ._content_container._cul ._content ._content_item ._dec_box ._txt{font-size: 13px}
     ._content_container._cul ._content ._content_item ._view_box2{display: none}
     ._modal_container ._modal_wrap ._main_table thead{font-size: 11px}
+    ._modal_container ._modal_wrap ._main_table tbody{font-size: 11px}
     ._modal_container ._modal_wrap ._item_top ._tit{font-size: 18px}
     ._modal_container ._modal_wrap ._item_top ._txt{font-size: 11px}
     ._modal_container ._modal_wrap ._item2 ._item_top ._tit{font-size: 16px}
     ._modal_container ._modal_wrap ._item_con ._data{font-size: 14px}
     ._modal_container ._modal_wrap ._item_con ._con ._txt{font-size: 12px}
-    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst{float: none;margin: 0 auto}
+    ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst{float: none;max-width: 100%;margin: 0 auto}
     ._modal_container ._modal_wrap ._item_con ._img_lsts ._img_lst ._txt{font-size: 12px}
     ._modal_container ._modal_wrap ._item_con ._dec_box ._table_tit{font-size: 11px}
     ._modal_container ._modal_wrap ._item_con ._dec_box ._dec tbody{font-size: 11px}
@@ -177,10 +227,24 @@
     #_modal3._modal_container ._modal_wrap ._item_con ._con._2ed{padding-top: 0}
     #_modal3._modal_container ._modal_wrap ._item_con ._con ._con_lst ._tit{font-size: 13px}
     #_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst{float: none;width: 100%}
+    #_modal3._modal_container ._modal_wrap ._item4 ._item_con ._con ._con_lst._con_lst8 ._img_box{margin-bottom: 0}
     #_modal4._modal_container ._modal_wrap ._main_table thead td{padding: 2px}
     #_modal4._modal_container ._modal_wrap ._item_con ._con ._con_lst._con_lst11, #_modal4._modal_container ._modal_wrap ._item_con ._con ._con_lst._con_lst13{margin-right: 0;margin-bottom: 30px}
     #_down_btn{font-size: 13px}
     ._modal_container ._modal_footer ._tit{font-size: 11px}
     ._modal_container ._modal_footer ._txt{font-size: 18px}
+/* art */
+    ._content_container._cul ._content ._sub_tit:after{width: 10%}
+    ._content_container._cul ._content._art ._sub_dec_box ._txt{font-size: 13px}
+    ._content_container._cul ._content._art ._content_item{float: none;width: 100%}
+    ._content_container._cul ._content._art ._content_item ._con{height: auto;padding-bottom: 30px}
+    ._content_container._cul ._content._art ._content_item ._con ._tit{font-size: 18px}
+    ._content_container._cul ._content._art ._content_item ._con ._tit:before{top: 0}
+/* borad */
+    ._content_container._board ._content ._board thead td{font-size: 14px}
+    ._content_container._board ._content ._board td{padding: 6px;font-size: 11px}
+    ._content_container._board ._content ._board td:first-child{width: 15%}
+    ._content_container._board ._content ._board td:nth-of-type(2){width: 75%}
+    
     
 }
