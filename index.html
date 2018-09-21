@@ -55,8 +55,18 @@
                         <img src="imgs/main_logo.png" alt="서울 문화로 바캉스 서울, 문화로 피서를 즐기다! 2018.08.10(금)~11(토), 17:00 ~ 24:00 서울광장, 청계광장, 광화문광장 등" class="_rel">
                     </h1>
                 </div>
+                <div id="_anchor_wrap">
+                    <div class="_anchor_box">
+                        <ul class="_anchor">
+                            <li class="_anchor_lst _anchor_lst1" data-menuanchor="_section1"><a href="#_section1"><span class="_nav_icon">_section1 anchor</span></a></li>
+                            <li class="_anchor_lst _anchor_lst2" data-menuanchor="_section2"><a href="#_section2"><span class="_nav_icon">_section2 anchor</span></a></li>
+                            <li class="_anchor_lst _anchor_lst3" data-menuanchor="_section3"><a href="#_section3"><span class="_nav_icon">_section3 anchor</span></a></li>
+                            <li class="_anchor_lst _anchor_lst4" data-menuanchor="_section4"><a href="#_section4"><span class="_nav_icon">_section4 anchor</span></a></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
-            <section class="section _content_container _seoul1">
+            <section data-anchor="_section1" class="section _content_container _seoul1">
                 <h2 class="_sub_logo _x _p">
                     <p class="_tit">광장바캉스</p>
                     <p class="_sub_txt">서울 도심의 중심! 서울광장, 청계광장, 광화문광장에서<br>펼쳐지는 다양한 문화체험 도시 바캉스</p>
@@ -88,7 +98,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section _content_container _seoul2">
+            <section data-anchor="_section2" class="section _content_container _seoul2">
                 <h2 class="_hide_txt">청계 / 광화문 바캉스</h2>
                 <div class="_content_wrap">
                     <div class="_content_top _content_top_1st _x">
@@ -119,7 +129,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section _content_container _art">
+            <section data-anchor="_section3" class="section _content_container _art">
                 <h2 class="_sub_logo _x  _p">
                     <p class="_tit">아트바캉스</p>
                     <p class="_sub_txt">시민 참여를 위한 서울 도심 문화 프로그램<br>1년에 단 한번, 개방된 공간에서 즐기는 스페셜 투어</p>
@@ -140,7 +150,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section _content_container _bot">
+            <section data-anchor="_section4" class="section _content_container _bot">
                 <h2 class="_tit_img">
                     <img src="imgs/bot_logo.png" alt="피서 멀리 간다고 신난다는 보장 있나요?, 서울문화로 바캉스, 잘 키운 서울문화로바캉스, 열 해외 바캉스 안부럽다." class="_rel">
                 </h2>
@@ -195,6 +205,8 @@
             });
             $('#fullpage').fullpage({
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                menu: '#_anchor_wrap',
+                anchors: ['_section0', '_section1', '_section2', '_section3', '_section4', '_section5'],
                 scrollBar: true,
                 responsiveHeight: 567,
                 afterLoad: function(origin, destination, direction) {

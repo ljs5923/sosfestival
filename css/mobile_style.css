@@ -26,7 +26,9 @@
 /* eng */
     ._content_container._eng ._content ._img_box{padding-left: 10%}
 }
+/* 태블릿 디바이스 (세로 해상도가 769 보다 작은 화면에 적용) */
 @media only screen and (max-height:768px){
+/* main */
     ._content_container ._content_bott{display:none}
     ._content_container._seoul1 ._content_top{padding-bottom:0}
     ._content_container._art ._content_top ._img_box{width:30%;padding-left:20%}
@@ -61,13 +63,14 @@
     ._content_container._board ._content ._board thead td{font-size: 16px}
     ._content_container._board ._content ._board td{font-size: 14px}
 }
-/* 가로모드 모바일 디바이스 (세로 해상도가 376px 보다 작은 화면에 적용) */
+/* 가로모드 모바일 디바이스 (세로 해상도가 412px 보다 작은 화면에 적용) */
 @media only screen and (max-height:411px){
 /* main */
     #_header ._nav{display:none}
     #_header ._menu_btn_wrap{display:block}
     #_header ._tab_menu ._tab_lst ._txt{font-size: 16px}
     #_header ._tab_menu ._tab_lst ._txt._foc{font-size: 20px}
+    #_anchor_wrap{display: none}
     ._content_container ._sub_logo._x{margin-top:50px}
     section.section._content_container ._content_wrap ._content_top ._img_box{width: 40%;padding-left: 30%;margin: 0}
     ._content_container._seoul1 ._content_wrap ._content_top ._dec_box{padding-top:210px}
@@ -108,6 +111,7 @@
     #_header ._nav{display:none}
     #_header ._menu_btn_wrap{display:block}
     #_header ._spot_wrap ._main_logo{width:390px}
+    #_anchor_wrap{display: none}
     ._content_container ._sub_logo{width:299px;padding:10px 0;margin-top:50px}
     ._content_container ._sub_logo ._tit{font-size:24px}
     ._content_container ._sub_logo ._sub_txt{padding-top:10px;font-size:13px}
